@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+html {
+  cursor: url(cursor.cur), default;
+}
+body {
+  user-select: none;
+  align-items: center;
+  background-color: #24292e;
+  color: #c5c8c6;
+  display: flex;
+  font: 22px/1 "Inconsolata", monospace;
+  height: 100vh;
+  justify-content: center;
+}
+
+#body {
+  background-color: #1f2428;
+  border-radius: 2px;
+  box-shadow: 1px 1px 6px #1d1f2187;
+  color: #c5c8c6;
+  display: flex;
+  flex-direction: column;
+  min-height: 30ch;
+  min-width: 50vw;
+  padding: 2em;
+}
+
+p {
+  margin: 0;
+}
+
+p span {
+  font-weight: bold;
+
+  color: #f97578;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: url(cursor.cur), pointer;
+}
+
+a:focus,
+a:hover {
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  column-gap: 2em;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 1em 0;
+}
+
+ul li:first-child {
+  color: #b392f0;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  margin: 0 0 1em;
+}
+
+input {
+  font: 22px/1 "Inconsolata", monospace;
+  background-color: #00000000;
+  color: #c5c8c6;
+  border: #00000000;
+  caret-color: #c5c8c6;
+  width: calc(100% - 200px);
+  user-select: none;
+  cursor: url(cursor.cur), text;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+#search {
+  text-transform: lowercase;
+}
+
+#btn {
+  display: none;
+}
