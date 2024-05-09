@@ -22,14 +22,24 @@ a.addEventListener("keypress", function (event) {
 });
 
 const output = document.getElementById("toast");
-function clipboard() {
-  const copyText =
-    '<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">';
-
-  navigator.clipboard.writeText(copyText);
-
+function toast() {
   output.style.visibility = "visible";
   setTimeout(function () {
     output.style.visibility = "hidden";
   }, 2000);
+}
+
+function clipboard1() {
+  const copyText =
+    '<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">';
+
+  navigator.clipboard.writeText(copyText);
+  toast();
+}
+
+function clipboard2() {
+  const copyText = "https://picsum.photos/200/300";
+
+  navigator.clipboard.writeText(copyText);
+  toast();
 }
