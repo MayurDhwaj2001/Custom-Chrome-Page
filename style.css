@@ -99,3 +99,23 @@ input:focus {
 #btn {
   display: none;
 }
+
+.copied {
+  background: #1f2428;
+  display: flex;
+  height: 35px;
+  width: 140px;
+  justify-content: center;
+  border-top-left-radius: 20px;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  visibility: hidden;
+  padding-top: 10px;
+  z-index: 100;
+  color: #f97578;
+  font-size: 18px;
+}
+.m0 {
+  margin: 0;
+}
